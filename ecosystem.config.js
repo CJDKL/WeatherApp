@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:CJDKL/WeatherApp.git',
       path: '/home/ubuntu/WeatherApp',
-      'post-deploy': 'npm install'
+      'post-deploy': 'npm install && npm i -g pm2@2.5 && pm2 startOrRestart ecosystem.config.js'
     }
   }
 }
